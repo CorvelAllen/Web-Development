@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Member Registration</title>
+        <link rel="stylesheet" href="assignment4.css">
+    </head>
+    <body onload="createEventListeners()">
+        <div id="body">
+        <header>
+            <img src="images/register.png" alt="Register Now!">
+            <h1>Registration Form</h1>
+        </header>
+        
+        <form  method="post">
+            <fieldset id="forminput">
+            <label>First Name :</label>
+            <input type="text" id="fname" name="fname" required="required"> <br>
+            <label>Last Name :</label>&nbsp;
+            <input type="text" id="lname" name="lname" required="required"><br>
+            <label>Address :</label> 
+            <input type="text" id="address" name="address" required="required"><br>
+            <label>City :</label>  
+            <input type="text" id="city" name="city" required="required"><br>
+            <label>Postal Code:</label>
+            <input type="text" id="postal" name="postal" required="required"><br>
+            <label>Province:</label> 
+            <select id="province" name="province" required="required">         
+                <option>BC</option>
+                <option>AB</option>
+                <option>QC</option>
+                <option>ON</option>
+                <option>SK</option>
+                <option>MN</option>
+            </select><br>
+            <label>Age:</label>
+            <input type="number" id="age" name="age" required="required" min="18"><br>
+            <label>Password :</label>
+            <input type="password" id="passwordinput" name="passwordinput" required="required"> <br><span id="message"></span>
+            <label>Confirm :</label>
+            <input type="password" id="confirmation" name="confirmation" required="required"> <br>
+            <label>Email :</label>
+            <input type="email" id="email" name="email" required="required"> <br>
+            </fieldset>
+            <fieldset id="submit">
+                <input type="submit" id="submitbutton" value="Register Now">
+                <input type="reset" id="clearbutton" value="Clear Form">
+            </fieldset>
+        </form>
+
+     <footer>Copyright &copy; All Rights Reservered - Corvel Allen - Web Design </footer>
+    </div>
+    <script src="Cscript.js"></script>
+</body>
+</html>

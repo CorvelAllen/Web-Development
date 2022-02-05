@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      Author: Corvel Allen
+      Student #: 301078286
+   -->
+      <meta name="viewport" content="width=page-width, initial-scale=1.0">
+   <title>Form Duplicator</title>
+   <link rel="stylesheet" href="midterm.css" />
+   <script> src="midterm.js"</script>
+</head>
+
+<body>
+   <div id="body">
+      <header>
+         <h1>
+            Form Duplicator
+         </h1>
+      </header>
+	  <article>
+	  <form novalidate>
+         <fieldset id="entryLevel1" class="text">
+            <legend>ENTRY LEVEL 1</legend>
+            <label for="firstName">First Name :</label>
+            <input id="firstName" name="FirstName" type="text" required="required" /> <br/><br/>
+            <label for="lastName">Last Name :</label>
+            <input id="lastName" name="LastName" type="text" required="required" /><br/><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<label for="address">Address :</label>
+            <input id="address" name="Address" type="text" required="required" /><br/><br/>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="gender">Gender :</label>
+            <select id="gender" name="gender" required="required">
+               <option value="female">Female</option>
+               <option value="male">Male</option>
+            </select><br/><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="telePhone">Phone :</label>
+            <input id="telePhone" name="telePhone" type="number" required="required" /><br/><br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="gender">Year :</label>
+            <select id="year" name="year" required="required">
+               <option value="21">2021</option>
+			   <option value="20">2020</option>
+			   <option value="19">2019</option>
+			   <option value="18">2018</option>
+			   <option value="17">2017</option>
+			   <option value="16">2016</option>
+			   <option value="15">2015</option>
+			   <option value="14">2014</option>
+			   <option value="13">2013</option>
+			   <option value="12">2012</option>
+			   <option value="11">2011</option>
+			   <option value="10">2010</option>
+			   <option value="9">2009</option>
+			   <option value="8">2008</option>
+			   <option value="7">2007</option>
+			   <option value="6">2006</option>
+			   <option value="5">2005</option>
+			   <option value="4">2004</option>
+			   <option value="3">2003</option>
+               <option value="2">2002</option>
+               <option value="1">2001</option>
+			   <option value="0">2000</option>       
+            </select><br/><br/>
+            <div class="errorMessage"></div>
+         </fieldset><br/>
+		 
+         <fieldset id="entryLevel2" class="text">
+            <legend>ENTRY LEVEL 2</legend>
+            <div class="checks">
+               <input id="sameEntry" name="SameEntry" type="checkbox" onclick="copyEntryLevel1()"/>
+               <label for="sameEntry">same as Entry level 1</label>
+            </div><br/>
+            <label for="firstName2">First Name :</label>
+            <input id="firstName2" name="FirstName" type="text" required="required" /><br/><br/> 
+            <label for="lastName2">Last Name :</label>
+            <input id="lastName2" name="LastName" type="text" required="required" /><br/><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<label for="address">Address :</label>
+            <input id="address2" name="Address" type="text" required="required" /><br/><br/>
+            
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="gender">Gender :</label>
+            <select id="gender2" name="gender" required="required">
+               <option value="female">Female</option>
+               <option value="male">Male</option>
+            </select><br/><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="telePhone">Phone :</label>
+            <input id="telePhone2" name="telePhone" type="number" required="required" /><br/><br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="gender">Year :</label>
+            <select id="year" name="year" required="required">
+               <option value="21">2021</option>
+			   <option value="20">2020</option>
+			   <option value="19">2019</option>
+			   <option value="18">2018</option>
+			   <option value="17">2017</option>
+			   <option value="16">2016</option>
+			   <option value="15">2015</option>
+			   <option value="14">2014</option>
+			   <option value="13">2013</option>
+			   <option value="12">2012</option>
+			   <option value="11">2011</option>
+			   <option value="10">2010</option>
+			   <option value="9">2009</option>
+			   <option value="8">2008</option>
+			   <option value="7">2007</option>
+			   <option value="6">2006</option>
+			   <option value="5">2005</option>
+			   <option value="4">2004</option>
+			   <option value="3">2003</option>
+               <option value="2">2002</option>
+               <option value="1">2001</option>
+			   <option value="0">2000</option>
+            </select><br/><br/>
+            <div class="errorMessage"></div>
+         </fieldset>
+		  <div id="buttonContainer">
+            <input type="submit" value="Complete Entry" id="orderButton" />
+         </div>
+		 </form>
+		 </article>
+		 </body>
+		 <footer><p>Copyright &copy; All Rights Resevered - Corvel Allen - Web Development</p></footer>
+		 </html>

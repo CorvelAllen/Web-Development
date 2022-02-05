@@ -1,71 +1,33 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-<title> Protected Areas Around the World </title>
-<meta charset="utf-8">
-<meta name="author" content="Corvel Allen">
-<!-- Created by: Corvel Allen  Student #:301078286-->
+<title> TABLE CREATOR</title>
+<!--Created by:Corvel Allen 
+Student #:301078286-->
+<link rel="stylesheet" href="assignment2.css"/>
 </head>
 
-<body style=" display:flex; align-items:center;  color:#003300; font-family:verdana; font-size:14pt; background-image:url('images/hit.png');"> 
-<div style="width:1000px; margin:auto; text-align:center; background-color:#99CCFF;">
-<img src="images/views.jpg" alt="Nature image"/>
-<h3 style="background-color: #00FF00; color:crimson;">INFORMATION ON PROTECTED AREAS</h3>
-
-<hr style="border-style:inset; border-width:2px;">
-
-<nav style="background-color:#00CC00; color:crimson;"> 
-<a href="#categories;" style="padding-left:50px; padding-right:100px;">Categories</a> 
-<a href="#strategies to issues;"style="padding-right:100px;">Strategies</a>
-<a href="#websites;" style="padding-right:100px;">Websites</a>
-<a href="#strategies to issues;" style="padding-right:100px;">Issues</a>
-</nav>
-
-<hr style="border-style:inset; border-width:2px;">
-
-<main>
-<P style="text-align:left;">A <b>Protected Area</b> is a clearly defined geographical space, recognised, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values.
-Protected areas are at the core of efforts towards conserving nature and the services it provides us – food, clean water supply, medicines and protection from the impacts of natural disasters. Their role in helping mitigate and adapt to climate change is also increasingly recognized; it has been estimated that the global network of protected areas stores at least 15% of terrestrial carbon.Protected Areas (PAs) are one of the oldest techniques used to protect places and resources for achieving conservation-related goals, and are widely recognized as a cornerstone of conservation policy and action. Over the past decades, understanding of protected areas has evolved from a narrow definition of government-controlled strictly protected reserves to an expansive conception that encompasses a range of governance types and management categories in effective and equitable protected area systems that are integrated into the wider landscape or seascape.
-</p>
-<image src="images/thiss.jpg" alt="preservation areas" style="float:right;"/>
-<h4 id="categories;" style="color:crimson; background-color:#00FF00;">Categories of Protected Areas</h4>
-<ol style="list-style-type:upper-roman; text-align:left;">
-<li>Strict Nature Reserve</li>
-<li>Wilderness Area</li>
-<li>National Park</li>
-<li>Natural Monument or Feature</li>
-<li>Habitat/Species Management Area</li>
-<li>Protected Landscape/ Seascape</li>
-<li>Protected area with sustainable use of natural resources</li>
-</ol>
-
-<h4 id="strategies to issues;" style="color:crimson; background-color:#00FF00;">Strategies To Some Issues</h4>
-<p style="text-align:left;"><b>Ecosystem-based adaptation</b> is an approach that harnesses the benefits offered by nature to help people adapt to climate change. Effective governance frameworks are needed to implement EBA on a large scale and make it a central pillar of adaptation strategies.</p>
-<p style="text-align:left;">Protected areas in developing countries face a serious and increasing funding gap.The <b>Incubator for Nature Conservation</b> provides services to protected areas seeking to improve their business model and achieve financial sustainability.</p>
-<p style="text-align:left;">Protected areas (PAs) ensure <b>biological diversity</b> and ecosystem services. In  order to be effective, protected area systems, as well as individual protected areas, must be supported by strong and well-implemented legal frameworks.</p>
-
-
-<h4 id="websites;" style="color:crimson; background-color:#00FF00;">Resourceful Websites</h4>
-<ul style="list-style-image:url('images/bullet.gif'); text-align:left;">
-<li><a href="https://www.protectedplanet.net/en" target="_blank">Protected Planet</a></li>
-<li><a href="https://www.unep-wcmc.org/resources-and-data/wdpa" target="_blank">UN Environment Programme World Conservation Monitoring Centre (UNEP-WCMC)</a></li>
-<li><a href="https://resourcewatch.org/" target="_blank">Resource Watch</a></li>
-<li><a href="https://www.iucn.org/theme/protected-areas/about" target="_blank">International Union For Conservation of Nature</a></li>
-<li><a href="https://globalforestatlas.yale.edu/conservation" target="_blank">Global Forrest Atlas</a></li>
-<li><a href="https://www.wri.org/resource/marine-protected-areas-world" target="_blank">World Resources Institute</a></li>
-<li><a href="https://www.ltandc.org/ipbes-global-assessment-1-million-animal-and-plant-species-are-now-threatened-with-extinction/" target="_blank">Linking Tourism And Conservstion</a></li>
-</ul>
-</main>
-
-<footer>
-<hr style="border-style:inset; border-width:2px;">
-<h6><i>Copyright&copy;&nbsp;-Corvel Allen 301078286-Web Interface Design(213)-Assigntment2-Protected Areas; All Rights Reserved</i>.
-<br/>
-References: Information from Protected Planet, UNEP-WCMC, International Union for Conservation of Nature & World Resources Institute &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Images from Linking tourism and conservation website 
-</h6>
-<hr style="border-style:inset; border-width:2px;">
-</footer>
-
+<body id="body" onload="printTable(15, 15)">
+<img src="images/table.jpg" alt="table maker"><hr>
+<h3>A TYPICAL RESPRESENTATION OF A 15 BY 15 TABLE</h3><hr>
+<div id="display">
+<div id="autoTable">
+</div></div><br>
+<div id="input">
+<form onsubmit="printTable(document.getElementById('row').value, document.getElementById('col').value); return false">
+   	<fieldset>
+    <h5>CUSTOMIZE YOUR OWN TABLE</h5>
+	<input type="number" placeholder="Number of rows" id="row">
+	<input type="number" placeholder="Number of columns" id="col">
+	<br>
+	<input type="submit" value="Generate" id="submit">
+	</fieldset>
+</form>
 </div>
+
+<script src="assignment2.js"></script>
 </body>
+
+<br>
+<footer>COPYRIGHT &copy; ALL RIGHTS RESERVED - CORVEL ALLEN - CLIENT SIDE WEB DEVELOPMENT - COMP125</footer>
+
 </html>

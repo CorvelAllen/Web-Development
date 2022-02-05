@@ -1,0 +1,22 @@
+#body{
+	background-color: olive;
+	font-family: verdana;
+	width: 1080px;
+	margin: auto;
+	align-items: centre;
+	display: block;
+}
+body{
+	background-color: orange;
+}
+h1{
+    text-align: centre;
+	font-family: arial;
+	font-size: 28pt;
+}
+fieldset{
+	border-radius: 20pt;
+	border-width: 5px;
+	border-color: orange;
+	
+}

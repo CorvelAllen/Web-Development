@@ -1,0 +1,96 @@
+"use strict"
+ 
+let firstName = document.getElementById("fname");
+let lastName = document.getElementById("lname");
+let addr = document.getElementById("address");
+let cityInput= document.getElementById("city");
+let pcode = document.getElementById("postal");
+let prov = document.getElementById("province");
+let ageInput = document.getElementById("age");
+let password = document.getElementById("passwordinput");
+let confirm = document.getElementById("confirmation");
+let emailInput = document.getElementById("email");
+
+function validate(){
+    let firstName = document.getElementById("fname");
+    let lastName = document.getElementById("lname");
+    let addr = document.getElementById("address");
+    let cityInput= document.getElementById("city");
+    let pcode = document.getElementById("postal");
+    let prov = document.getElementById("province");
+    let ageInput = document.getElementById("age");
+    let password = document.getElementById("passwordinput");
+    let confirm = document.getElementById("confirmation");
+    let emailInput = document.getElementById("email");
+
+    validateEmail();
+    verifyPassword();
+    age();
+    
+    if (firstName.value == "" || lastName.value == "" || addr.value == "" || cityInput.value == "" ||
+     pcode.value == "" || prov.value == ""){
+        alert("Please ensure that all fields are completed!");
+    }
+    return ( true );
+} 
+
+function validateEmail(){
+var emailInput = document.getElementById("email").value;
+atPosition = emailInput.indexOf("@");
+dotPosition = emailInput.indexOf(".");
+
+if (atPosition < 1 || (dotPosition - atPosition < 2) || emailInput == ""){
+    alert('Please enter a valid email address!');
+    document.getElementById("email").focus();
+    return false;
+}
+return ( true );
+}
+
+
+function verifyPassword(){
+    var password = document.getElementById("passwordinput").value;
+    var confirm = document.getElementById("confirmation").value;
+    if(password == ""){
+        document.getElementById("message").innerHTML = "**Please enter a password!**";
+        return false;    
+    }
+    if(password.length < 6){
+        document.getElementById("message").innerHTML = "**Password must be atleast 6 characters**";
+        return false;
+    }
+    if (password != confirm){
+        document.getElementById("message").innerHTML = "**Passwords did not match!**";  
+        return false;
+    }
+
+    else {
+        document.getElementById("message").innerHTML = "**Passwords match!**";  
+        return false;
+    }
+    
+}
+
+function age(){
+    var ageinput = document.getElementById("age").value;
+    if(ageinput < 18){
+        alert("A minimum of 18 years is requiered!");
+    }
+}
+
+function createEventListeners(){
+    var subButton = document.getElementById("submitbutton");
+    if(subButton.addEventListener){
+        subButton.addEventListener("click", validate, false);
+    }
+    else if (subButton.attachEvent){
+        subButton.attachEvent("onclick", validate);
+    }
+}
+
+if(window.addEventListener){
+    window.addEventListener("load", createEventListeners, false);
+}
+else if (window.attachEvent){
+    window.attachEvent("onload", createEventListeners);
+}
