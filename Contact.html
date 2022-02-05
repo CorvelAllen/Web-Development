@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Real Estate Agent - Robert Greenberg</title>
+<!-- Created by Corvel Allen  Student#:301078286 -->
+<link href="termproject.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<h1>ROBERT GREENBERG REALTOR.INC</h1>
+<a <a href="termproject.html" id="logo"><img src="images\agentlogo.png" alt="logo"></a>
+<div id="navigation"> 
+<hr/>
+<nav>
+ <a href="sitemap.html">SITEMAP</a> 
+ <a href="Contact.html">CONTACT</a>
+ <a href="available_properties.html">AVAILABLE PROPERTIES</a>
+ <a href="termproject.html">HOME PAGE</a>
+</nav> <br>
+<hr/>
+</div>
+</header>
+<main>
+<hr>
+<h2>REQUEST YOUR DREAM HOUSE</h2>
+<form action="mailto:INFO@12ROBERTGREENBERG.com" method="post">
+
+<fieldset id="field" name="Personal_info">
+<legend id="legend">PERSONAL INFORMATION:</legend><br>
+<label>*First Name:</label> <input type"text" name="firstname" maxlength="12">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>*Last Name:</label> <input type="text" name="lastname" maxlength="12"><br><br><br>
+<label>*Email:</label> &nbsp;<input type="email" name="email" required="required" length="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Telephone Number:</label> <input type="text" name="number" placeholder=" (647)453-5102" maxlength="13">
+</fieldset>
+<hr>
+<fieldset id="field" name="request">
+<legend>TYPE OF PROPERTY:</legend>
+<label>Preferred Community:</label> <input type="text" name="location" maxlength="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>No. of Bedrooms</label>
+<select>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5+</option>
+</select><br><br>
+<label>Type of Property:</label> <input type="text" name="type" list="property">
+<datalist id="property">
+<option>CONDOMINIUM</option>
+<option>HOUSE</option>
+</datalist>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>No. of Bathrooms</label>
+<select>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5+</option>
+</select><br><br>
+<label>Province: </label> <input type="text" name="province" list="place">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<datalist id="place">
+<option>ONTARIO</option>
+<option>ALBERTA</option>
+<option>BRITISH COLOMBIA</option>
+</datalist>
+<label>Price Range:</label>  500,000 <input type="range" name="price">2,000,000+
+<br><br>
+<label>Comments: </label><textarea name="comments" cols="50" rows="7">Leave any special requests here!!</textarea>
+</fieldset><hr>
+<div id="Done"><p>
+<input type="submit" id="submitButton" name="submitButton" value="Complete Form!">&nbsp;&nbsp;&nbsp;
+<input type="reset" id="resetButton" name="resetButton" value="Clear Form">
+</p></div>
+</form>
+<p id="note">Note: Ensure all fields with the * are filled</p>
+<hr>
+
+</main>
+<footer>Copyright &copy; ROBERT GREENBERG - REAL ESTATE AGENT </footer>
+</body>
+</html>

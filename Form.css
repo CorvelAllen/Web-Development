@@ -1,0 +1,57 @@
+﻿body{
+	font-family: verdana;
+	font-size: 12pt;
+	background-color: #B0C4DE;
+	text-align: center;	
+}
+h1{
+	color:midnightblue;
+}
+div{
+	font:arial;
+	width:90%;
+	margin: auto;
+	background-color: lavender;
+	text-align: left;
+	display: block;
+}
+#legend{
+	font-weight: bold;
+	font-size: 14pt;
+	color: dark blue;
+	
+}
+#Personal_infos{
+	border-radius: 15px;
+}
+fieldset{
+	border-radius: 15px;
+}
+
+
+#copyright{
+	text-align:center;
+	font-style: italic;
+	font-weight:bold;
+}
+#image{
+	width:100%;
+	height: 300px;
+}
+img{
+	float:left;
+	height:50px;
+	width:50px;
+}
+
+#submitButton{
+	color:green;
+}
+#resetButton{
+	color:blue;
+}
+#mark{
+	color:red;
+	text-align:center;
+	font-weight: bold;
+}

@@ -1,0 +1,139 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta name="author" content="Corvel Allen" charset=utf-8">
+<!-- Created by: Corvel Allen Student #:301078286-->
+<title>Continuing Education:University of Toronto</title>
+<link rel="stylesheet" href="Form.css"/>
+</head>
+<body>
+<header>
+<hr><img id="image" src="images/school.jpeg" alt="University of Toronto"/></hr>
+<h1><a href="https://www.utoronto.ca/" target="_blank"><img src="images/logo1.png" alt="logo"></a>
+UNIVERSITY OF TORONTO<br>
+Continuing Education Course Form/Instructor Evaluation
+</h1><br>
+
+</header>
+
+
+<div>
+<form action="mailto:allencorvel@gmail.com" method="post">
+<fieldset id="Personal_infos" name="Personal_info">
+<legend id="legend">Personal Information:</legend><br>
+<label>Student Number:</label> <input type="text" name="student#" placeholder="403901803(9 digit number)" maxlength="9"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>*E-mail:</label> <input type="email" name="email" id="email" required="required">&nbsp;&nbsp;&nbsp;&nbsp;
+<label>*Date of Birth:</label> <input type="date" name="birthday" required="required"> <br><br>
+<label>*First Name:</label> <input type="text" name="firstName" id="firstName"  required="required" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>*Last Name:</label> <input type="text" name="lastName" id="lastName" required="required"> <br><br>
+<label>*Current Registration Status:</label><br>
+<input type="radio" name="status" required="required"> I am a new student to this school<br>
+<input type="radio" name="status" required="required"> I am a returning student to this school<br>
+<input type="radio" name="status" required="required"> I am a prospective student at the school, I have not yet enrolled
+</fieldset>
+
+<fieldset id="course" name="course">
+<legend id="legend">Course Details:</legend><br>
+<label>*Course Name:</label> <input type="text" name="courseName" list="courseNames">
+<datalist id="courseNames">
+ <option>Information Technology</option>
+ <option>Programming</option>
+ <option>Software Engineering</option>
+ <option>Web Interface Design</option>
+</datalist>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Course Code: </label><input type="text" name="coursecode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Start Date: </label> <input type="month"><br><br>
+<label>Campus Location:</label> <input type="text" name="campusName" list="campusNames">
+<datalist id="campusNames">
+ <option>Mississauga</option>
+ <option>St. George</option>
+ <option>Scarborough</option>
+</datalist>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Semester:</label> &nbsp;&nbsp;<input type="checkbox" name="semesters">Fall &nbsp; <input type="checkbox" name="semesters">Winter &nbsp; <input type="checkbox" name="semesters">Spring/Summer <br><br>
+<label>*Feedback on Course: </label><br>
+1. How would you rate the course materials? &nbsp;&nbsp;&nbsp;
+<input type="radio" name="materials" required="required"> Excellent &nbsp;
+<input type="radio" name="materials" required="required"> Good &nbsp;
+<input type="radio" name="materials" required="required"> Fair &nbsp;
+<input type="radio" name="materials" required="required"> Not Satisfactory <br><br>
+2. How did this course meet your expectations?
+<input type="radio" name="expectations" required="required"> Excellent &nbsp
+<input type="radio" name="expectations" required="required"> Good &nbsp;
+<input type="radio" name="expectations" required="required"> Fair &nbsp;
+<input type="radio" name="expectations" required="required"> Not Satisfactory <br><br>
+3. How would you rate this course (overall)? &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="ratings" required="required"> Excellent &nbsp;
+<input type="radio" name="ratings" required="required"> Good &nbsp;
+<input type="radio" name="ratings" required="required"> Fair &nbsp;
+<input type="radio" name="ratings" required="required"> Not Satisfactory <br><br>
+</fieldset> 
+
+<fieldset id="instructor" name="instructor">
+<legend id="legend">Intructor Information:</legend><br>
+<label>Instructor's Title:</label>
+<select>
+<option>Mr.</option>
+<option>Mrs.</option>
+<option>Miss</option>
+</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Intructor's Name:</label> <input type="text" name="instructorname"> <br><br>
+<label>*How would you rate the instructor's:</label> <br><br>
+1. Knowledge of subject?<br>
+<input type="radio" name="knowledge" required="required"> Excellent &nbsp;
+<input type="radio" name="knowledge" required="required"> Good &nbsp;
+<input type="radio" name="knowledge" required="required"> Fair &nbsp;
+<input type="radio" name="knowledge" required="required"> Not Satisfactory <br><br>
+2. Helpfulness?<br>
+<input type="radio" name="helpfulness" required="required"> Excellent &nbsp;
+<input type="radio" name="helpfulness" required="required"> Good &nbsp;
+<input type="radio" name="helpfulness" required="required"> Fair &nbsp;
+<input type="radio" name="helpfulness" required="required"> Not Satisfactory <br><br>
+3. Courtesy and Respect for Students?<br>
+<input type="radio" name="respect" required="required"> Excellent &nbsp;
+<input type="radio" name="respect" required="required"> Good &nbsp;
+<input type="radio" name="respect" required="required"> Fair &nbsp;
+<input type="radio" name="respect" required="required"> Not Satisfactory <br><br>
+4. Communication Skills?<br>
+<input type="radio" name="communication" required="required"> Excellent &nbsp;
+<input type="radio" name="communication" required="required"> Good &nbsp;
+<input type="radio" name="communication" required="required"> Fair &nbsp;
+<input type="radio" name="communication" required="required"> Not Satisfactory <br><br>
+5. Overall Performance?<br>
+<input type="radio" name="performance" required="required"> Excellent &nbsp;
+<input type="radio" name="performance" required="required"> Good &nbsp;
+<input type="radio" name="performance" required="required"> Fair &nbsp;
+<input type="radio" name="performance" required="required"> Not Satisfactory <br><br>
+</fieldset>
+
+<fieldset>
+<legend id="legend">*General Information:</legend>
+1. Was the course outline reviewed/explained at the beginning of your course?<br>
+<input type="radio" name="outline" required="required"> Yes &nbsp;
+<input type="radio" name="outline" required="required"> No &nbsp;
+<input type="radio" name="outline" required="required"> Not Sure &nbsp;<br><br>
+2. Would you recommend this course to a friend with the same interests?<br>
+<input type="radio" name="recommend" required="required"> Yes &nbsp;
+<input type="radio" name="recommend" required="required"> No &nbsp;
+<input type="radio" name="recommend" required="required"> Not Sure <br><br>
+3. What is the best thing about this course? <br><textarea cols="50" rows="7" id="best_thing" name="bestthing" placeholder="Please leave a comment..."></textarea><br><br>
+4. How could we improve this course? <br><textarea  cols="50" rows="7" id="improvements" name="improvements" placeholder="Please leave a comment..."></textarea><br><br>
+Comments:<br><textarea cols="50" rows="7" id="comments" name="comments" placeholder="Please leave a comment..."></textarea>
+<p id="mark">Please ensure to fill out all areas marked with the *</p></fieldset>
+
+
+</div>
+<input type="submit" id="submitButton" name="submitButton" value="Complete Form Now!">&nbsp;&nbsp;&nbsp;
+<input type="reset" id="resetButton" name="resetButton" value="Clear Form">
+</form>
+<p>Thank You For Your Feedback!<br>
+Website:<a href="https://learn.utoronto.ca/" target="_blank">www.universitytoronto.com</a>   &nbsp;&nbsp;&nbsp;  
+E-mail: <a href="mailto:allencorvel@gmail.com">learn@utoronto.com</a></p>
+<hr>
+<footer>
+<p id="copyright">&copy;&nbsp; Copyright Corvel Allen - 301078286 - Web Interface Design</p>
+</footer>
+</hr>
+</body>
+
+
+</html>

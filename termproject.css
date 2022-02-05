@@ -1,0 +1,82 @@
+body{
+    text-align: left;
+	background-color: lavender;
+	color: black;
+	margin: auto;
+	width: 90%;
+	font-family: arial;
+    font-size:	19px;
+	
+}
+header{
+	text-align: center;
+	background-color: gold;
+}
+a{text-decoration: none;}
+nav a{
+	display: block;
+	float: right;
+	justify-content: space-evenly;
+	padding-left: 140px;
+	padding-right: 15px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+#submitButton{
+              color: green;
+}
+#resetButton{
+            color: red;
+}
+#note{text-align: center;
+      font-style: italic;
+      font-weight:bold;
+}
+#Done{text-align: center;}
+
+			 
+nav a:hover{color: gold;}
+
+#agentinfo{
+	float: right;
+	padding-right:20px;
+	padding-left:20px;
+	text-align: center;
+}
+ul{
+	list-style-image: url('images/bullet.gif');
+}
+footer{
+	text-align: center;
+	background-color: gold;
+}
+
+#navigation{background-color: brown;}
+#logo{
+	float:left;
+	padding:2px 0px 10px 5px ;
+}
+#list_layout{
+	background-color: lavender;
+	text-align:left;
+	
+}
+#house{
+	float: right;
+}
+
+hr{
+	display:block;
+	background-color: gold;
+	height: 2px;
+}
+#image{
+	width:90%;
+	height:650px;
+	
+}
+#outside{float:left;
+        padding-right:250px;
+		}
+		
